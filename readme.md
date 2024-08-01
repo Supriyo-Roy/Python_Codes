@@ -1,11 +1,11 @@
-This is my Python Codes repo, here I list all my Python Codes
+# Python Codes Repo
 
+This is my Python Codes repo, here I list all my Python Codes.
 
-Currently I am working on -->
+## Currently I am working on
 
 1. Socket Programming
-2. Coding Practise in HAckerRank
-
+2. Coding Practice on HackerRank
 
 
 
