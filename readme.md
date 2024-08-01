@@ -20,8 +20,10 @@ Currently I am working on -->
 
 
 
------------------------------------------------------------------
-Linkedin --> www.linkedin.com/in/supriyo-roy-kolkata
-gmail --> roysupriyoroy73@gmail.com
-Ph.number --> +91-8016094062
-------------------------------------------------------------------
+---
+## Contact Information
+
+- **LinkedIn**: [Supriyo Roy](https://www.linkedin.com/in/supriyo-roy-kolkata)
+- **Gmail**: [roysupriyoroy73@gmail.com](mailto:roysupriyoroy73@gmail.com)
+- **Phone Number**: +91-8016094062
+---
