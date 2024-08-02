@@ -1,4 +1,4 @@
-Logic for matrix
+Logic for matrix  
 Ask is to find do the sum of its diagonal elemnts from right side and left side and give the difference
 Lets say your matrix is [[8,9,10],[6,2,9],[5,8,6]]
 
