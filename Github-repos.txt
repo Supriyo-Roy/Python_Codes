@@ -1,0 +1,4 @@
+https://github.com/mimi-netizen/Network-Administration-CCNA 
+https://github.com/AdminTurnedDevOps/DevOps-The-Hard-Way-AWS
+https://github.com/moabukar/tech-vault
+https://github.com/bregman-arie/devops-exercises
