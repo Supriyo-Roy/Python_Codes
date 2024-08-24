@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-pvc-migrator-historian
+  namespace: <namespace>
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: <node group>
+            operator: In
+            values:
+            - <node group>
+  containers:
+  - name: ubuntu
+    image: ubuntu:22.04
+    command: [ "sleep", "infinity" ]
+    volumeMounts:
+    - mountPath: /mnt/old
+      name: pvc-old
+    - mountPath: /mnt/new
+      name: pvc-new
+  tolerations:
+  - effect: NoSchedule
+    key: <node group>
+    operator: Equal
+    value: <node group>
+  volumes:
+  - name: pvc-old
+    persistentVolumeClaim:
+      claimName: influxdb-historian-storage-influxdb-historian-0
+  - name: pvc-new
+    persistentVolumeClaim:
+      claimName: influxdb-historian-storage-new-influxdb-historian-0

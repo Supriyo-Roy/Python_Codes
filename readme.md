@@ -1,4 +1,4 @@
-# Python Codes Repo
+# 🔧 Python Codes Repo
 
 This is my Python Codes repo, here I list all my Python Codes.
 
@@ -6,16 +6,7 @@ This is my Python Codes repo, here I list all my Python Codes.
 
 1. Socket Programming
 2. Coding Practice on HackerRank
-
-
-
-
-
-
-
-
-
-
+3. Automation Via Python
 
 
 

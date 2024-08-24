@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: <pv-new>
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: <size>Gi
+  claimRef:
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: influxdb-historian-storage-new-influxdb-historian-0
+    namespace: <namespace>
+  csi:
+    driver: ebs.csi.aws.com
+    fsType: ext4
+    volumeHandle: <volume-id>
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: topology.ebs.csi.aws.com/zone
+          operator: In
+          values:
+          - <availability zone>
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: eks-gp3-encrypted-iiotdatastack
+  volumeMode: Filesystem

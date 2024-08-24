@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  annotations:
+    aws-ebs-tagger/tags: '{"Application": "influxdb-buffering", "Namespace": "<namespace>","Backup_Plan": "default"}'
+  labels:
+    app.kubernetes.io/instance: buffering
+    app.kubernetes.io/name: influxdb
+  name: influxdb-buffering-storage-new-influxdb-buffering-0
+  namespace: <namespace>
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: <size>Gi
+  storageClassName: eks-gp3-encrypted-
+  volumeMode: Filesystem
+  volumeName: <pv-new>
